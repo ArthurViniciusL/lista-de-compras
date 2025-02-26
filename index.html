@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de compras</title>
+</head>
+
+<style>
+    :root {
+        --bg: white;
+        --font: black;
+        --line: #202020;
+    }
+
+    @media(prefers-color-scheme:dark) {
+        :root {
+            --bg: black;
+            --font: white;
+            --line: #e9e9e9;
+        }
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+        font-family: monospace;
+        scrollbar-width: none;
+    }
+
+    h1 {
+        font-size: 3rem;
+        font-weight: 600;
+    }
+
+    .bg-color {
+        background-color: var(--bg);
+    }
+
+    .font-color {
+        color: var(--font);
+    }
+
+    html {
+        width: 100dvw;
+        min-height: 100dvh;
+    }
+
+    body {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .container {
+        width: 80%;
+        max-width: 70rem;
+        min-height: 100dvh;
+
+        margin: 2rem;
+
+        display: flex;
+        gap: 2rem;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    main {
+        width: 100%;
+        display: inherit;
+        gap: 2rem;
+        flex-direction: column;
+    }
+
+    .item {
+        width: 100%;
+        padding-bottom: 1rem;
+        border-bottom: solid var(--line) 0.1rem;
+    }
+
+    label {
+        font-size: 1.5rem;
+    }
+
+    footer {
+        width: 80%;
+        font-size: 1rem;
+        padding: 2rem;
+        color: var(--font);
+        background-color: var(--bg);
+        border-top: solid 0.5px var(--line);
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+    }
+
+    a {
+        color: var(--font);
+    }
+</style>
+
+<body class="bg-color font-color">
+    <div class="container">
+        <h1>
+            📝
+            Lista de compras:
+        </h1>
+        <main>
+            <div class="item">
+                <input type="checkbox" id="vehicle1" name="vehicle1" value="tomates">
+                <label for="vehicle1">Tomates</label>
+            </div>
+            <div class="item">
+                <input type="checkbox" id="vehicle1" name="vehicle1" value="frango">
+                <label for="vehicle1">Peito de frango</label>
+            </div>
+            <div class="item">
+                <input type="checkbox" id="vehicle1" name="vehicle1" value="requeijao">
+                <label for="vehicle1">1 Requeijão</label>
+            </div>
+
+            <div class="item">
+                <input type="checkbox" id="vehicle1" name="vehicle1" value="presentu">
+                <label for="vehicle1">200g de Preseunto</label>
+            </div>
+
+            <div class="item">
+                <input type="checkbox" id="vehicle1" name="vehicle1" value="maca">
+                <label for="vehicle1">Maçã</label>
+            </div>
+        </main>
+    </div>
+    <footer>
+        <p>
+            Made by:
+            <a href="https://arthur-vsl.vercel.app/" target="_blank">@Arthu.vsl</a>
+        </p>
+    </footer>
+</body>
+
+</html>
